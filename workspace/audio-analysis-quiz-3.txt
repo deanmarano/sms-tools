@@ -1,0 +1,118 @@
+1.
+The linearity property of the DFT means that
+
+the DFT is a non-linear operation
+
+we can compute the DFT by summing two signals
+
+x the sum of two signals corresponds to the multiplication of their spectra
+
+:) x the scaled sum of two signals corresponds to the same scaled sum of their spectra
+1
+point
+2. 
+Shifting a signal in the time domain corresponds to
+
+:) multiplying its spectrum by a complex exponential
+
+x shifting its spectrum by the same value
+
+shifting only its magnitude spectrum
+
+x scaling its spectrum by a constant
+1
+point
+3. 
+The spectrum of a real signal has the following symmetry
+
+odd magnitude spectrum and even phase spectrum
+
+:) x even magnitude spectrum and odd phase spectrum
+
+odd magnitude spectrum and odd phase spectrum
+
+even magnitude spectrum and even phase spectrum
+1
+point
+4. 
+If we multiply two signals in the time domain, in the frequency domain this operation corresponds to
+
+the sum of their spectra
+
+the multiplication of their spectra
+
+:) x the convolution of their spectra
+
+the multiplication of their magnitude spectra
+1
+point
+5. 
+The operation to express the magnitude spectrum of a signal in decibels is
+
+20*log10(angle(X))
+
+:) x 20*log10(abs(X))
+
+20*log10(X)
+
+10*log10(abs(X))
+1
+point
+6. 
+Phase unwrapping is a way to represent the phase spectrum so that
+
+we obtain the exact values of all the phases
+
+x we limit the phase values to the range from 0 to 2pi
+
+:) we obtain a smooth function not bounded to the range 0 to 2pi
+
+x the phase spectrum becomes the same than the magnitude spectrum
+1
+point
+7. 
+Zero-padding the input signal of the DFT permits to
+
+x computer faster the FFT
+
+:) obtain an interpolated spectrum that is easier to study
+
+x have a window size equal to the FFT size
+
+obtain better frequency resolution
+1
+point
+8. 
+The FFT algorithm is an implementation of the DFT equation that
+
+:) x optimizes calculations by taking advantage of symmetries in the DFT equation
+
+cannot be used in Python so we will have to use the DFT
+
+is able to compute the DFT of real signals
+
+allows to compute the DFT of any size signal
+1
+point
+9. 
+Zero-phase windowing a signal permits to obtain a spectrum in which
+
+we can discard the phase spectrum and focus on the magnitude
+
+:) x there is no phase offset because the signal is centered around zero
+
+the phase spectrum of any signal is always zero
+
+the phase spectrum is the phase of the window
+1
+point
+10. 
+If we take the DFT of a real signal and then the IDFT of the resulting spectrum, the resulting signal
+
+:) x will be identical to the input signal
+
+will correspond to a few of the sinusoids present in the input signal
+
+will be a complex signal that will represent the spectrum
+
+will be a slightly modified version of the input signal
